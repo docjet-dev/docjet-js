@@ -1,0 +1,41 @@
+{
+  "name": "docjet",
+  "version": "1.0.0",
+  "description": "Official DocJet JS/TS SDK — fetch-based, zero runtime deps, ESM+CJS, full TypeScript types",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tsup": "8.5.1",
+    "typescript": "5.8.5",
+    "vitest": "4.1.8"
+  },
+  "keywords": [
+    "docjet",
+    "pdf",
+    "document",
+    "api",
+    "sdk"
+  ],
+  "license": "MIT"
+}
